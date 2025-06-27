@@ -7,7 +7,18 @@
 
 <!-- badges: end -->
 
-The goal of mathutils is to …
+Mathematical and Statistical Utility Functions for R
+
+## Overview
+
+The **mathutils** package provides a collection of utility functions for
+common mathematical and statistical operations. It includes functions
+for data normalization, enhanced statistical summaries.
+
+## Key Features
+
+- **Enhanced Statistical Summary**: Comprehensive statistics including
+  measures of central tendency, variability, and distribution shape
 
 ## Installation
 
@@ -15,9 +26,42 @@ You can install the development version of mathutils from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("pak")
-pak::pak("sayali-bot/mathutils")
+devtools::install_github("sayali-bot/mathutils")
 ```
+
+## Functions Overview
+
+mathutils provides four main utility functions:
+
+| Function             | Purpose                                 |
+|----------------------|-----------------------------------------|
+| `enhanced_summary()` | Comprehensive statistical summary       |
+| `normalize_data()`   | Data normalization (min-max or z-score) |
+| `percent_change()`   | Calculate percentage changes            |
+| `detect_outliers()`  | Identify outliers using IQR method      |
+
+## Usage Examples
+
+## Development
+
+This package was developed following modern R package development
+practices using:
+
+- **usethis**: Package setup and maintenance automation
+- **devtools**: Development, testing, and installation tools
+- **roxygen2**: Documentation generation from inline comments
+- **testthat**: Unit testing framework
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file
+for details.
+
+## Contact
+
+- Author: Sayali Salunkhe
+- Email: <salunkhesayali20@gmail.com>
+- GitHub: [@sayali-bot](https://github.com/sayali-bot)
 
 ## Example
 
@@ -27,27 +71,3 @@ This is a basic example which shows you how to solve a common problem:
 library(mathutils)
 ## basic example code
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
