@@ -4,7 +4,6 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -19,58 +18,16 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-Mathematical and Statistical Utility Functions for R
-
-## Overview
-
-The **mathutils** package provides a collection of utility functions for common mathematical and statistical operations. It includes functions for data normalization, enhanced statistical summaries.
-
-## Key Features
-
-- **Enhanced Statistical Summary**: Comprehensive statistics including measures of central tendency, variability, and distribution shape
+The goal of mathutils is to ...
 
 ## Installation
 
 You can install the development version of mathutils from [GitHub](https://github.com/) with:
 
 ``` r
-devtools::install_github("sayali-bot/mathutils")
+# install.packages("pak")
+pak::pak("sayali-bot/mathutils")
 ```
-
-
-## Functions Overview
-
-mathutils provides four main utility functions:
-
-| Function | Purpose |
-|----------|---------|
-| `enhanced_summary()` | Comprehensive statistical summary |
-| `normalize_data()` | Data normalization (min-max or z-score) |
-| `percent_change()` | Calculate percentage changes |
-| `detect_outliers()` | Identify outliers using IQR method |
-
-## Usage Examples
-
-
-
-## Development
-
-This package was developed following modern R package development practices using:
-
-- **usethis**: Package setup and maintenance automation
-- **devtools**: Development, testing, and installation tools
-- **roxygen2**: Documentation generation from inline comments
-- **testthat**: Unit testing framework
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contact
-
-- Author: Sayali Salunkhe
-- Email: salunkhesayali20@gmail.com
-- GitHub: [@sayali-bot](https://github.com/sayali-bot)
 
 ## Example
 
@@ -80,3 +37,19 @@ This is a basic example which shows you how to solve a common problem:
 library(mathutils)
 ## basic example code
 ```
+
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+```{r cars}
+summary(cars)
+```
+
+You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
+
+You can also embed plots, for example:
+
+```{r pressure, echo = FALSE}
+plot(pressure)
+```
+
+In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
